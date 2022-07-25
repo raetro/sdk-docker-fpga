@@ -339,7 +339,7 @@ complies with any relevant licenses for all software contained within.
 
 [Rætro Discord]: https://chat.raetro.org
 [GitHub discussions]: https://github.com/raetro/sdk-docker-fpga/discussions
-[raetro-sigs/sdk-docker-fpga]: https://github.com/raetro/sdk-docker-fpga
+[raetro/sdk-docker-fpga]: https://github.com/raetro/sdk-docker-fpga
 [https://github.com/raetro/sdk-docker-fpga/issues]: https://github.com/raetro/sdk-docker-fpga/issues
 
 [Docker Hub]: https://hub.docker.com/r/raetro/quartus/tags/
