@@ -1,0 +1,43 @@
+################################################################################
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileType: OTHER
+# SPDX-FileCopyrightText: (c) 2021-2022, The Raetro authors and contributors
+################################################################################
+name: Test Build
+################################################################################
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+################################################################################
+jobs:
+  synthesis:
+    runs-on: ubuntu-latest
+    container: raetro/quartus:17.1
+    ############################################################################
+    steps:
+      ##########################################################################
+      # 1 - Checkout repository
+      ##########################################################################
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      ##########################################################################
+      # 2 - RTL synthesis
+      ##########################################################################
+      - name: Run compilation flow
+        run: quartus_sh --flow compile my_project.qpf
+      ##########################################################################
+      # 3 - Upload artifacts
+      ##########################################################################
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: OutputFiles
+          path: output_files/

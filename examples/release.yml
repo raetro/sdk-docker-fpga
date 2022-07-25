@@ -1,0 +1,79 @@
+################################################################################
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileType: OTHER
+# SPDX-FileCopyrightText: (c) 2021-2022, The Raetro authors and contributors
+################################################################################
+name: Create New Core Release
+################################################################################
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Trigger only when tag matches v*, i.e. v1.0, v21.12.31, v211231
+################################################################################
+jobs:
+  synthesis:
+    runs-on: ubuntu-latest
+    container: ghcr.io/raetro/quartus:17.1 # Use GitHub Container Registry
+    #container: raetro/quartus:17.1        # Use DockerHub
+    ############################################################################
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    ############################################################################
+    steps:
+      ##########################################################################
+      ## 1 - Checkout repository
+      ##########################################################################
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      ##########################################################################
+      ## 2 - RTL synthesis
+      ##########################################################################
+      - name: Run compilation flow
+        run: quartus_sh --flow compile my_project.qpf
+      ##########################################################################
+      ## 3 - Get current version for tagging binary
+      ##########################################################################
+      - name: Get the version
+        id: version
+        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/} # Get the version from the tag
+        #run: echo "::set-output name=version::$(date +'%Y%m%d')"     # Use date as version
+      ##########################################################################
+      ## 4 - Upload artifacts
+      ##########################################################################
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: OutputFiles_${{ steps.version.outputs.version }}
+          path: output_files/
+          retention-days: 14
+      ##########################################################################
+      ## 5 - Create tag with version and SHA256 checksum
+      ##########################################################################
+      - name: Copy, tag with version and create SHA256 checksum
+        run: |
+          mkdir -p releases
+          cp output_files/my_project.rbf releases/my_project_${{ steps.version.outputs.version }}.rbf
+          ( cd output_files && sha256sum my_project.rbf > ../releases/my_project_${{ steps.version.outputs.version }}.rbf.sha256 )
+      ##########################################################################
+      ## 6 - Create a new GitHub release and upload the distribution artifacts
+      ##########################################################################
+      - name: Create a new GitHub release
+        uses: softprops/action-gh-release@v0.1.14
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            releases/my_project_${{ steps.version.outputs.version }}.rbf
+            releases/my_project_${{ steps.version.outputs.version }}.rbf.sha256
+      ##########################################################################
+      ## 7 - Don't ever commit binary files to Git! But if this is what you want to do.
+      ##########################################################################
+      #- name: Commit Binary to Repository (aka. the MiST(er) way)
+      #  run: |
+      #    git fetch
+      #    git checkout -b master
+      #    git config user.name github-actions
+      #    git config user.email github-actions@github.com
+      #    git add releases/my_project_${{ steps.version.outputs.version }}.rbf
+      #    git commit -m "Release ${{ steps.version.outputs.version }}"
+      #    git push origin master

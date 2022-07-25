@@ -1,0 +1,262 @@
+###############################################################################
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileType: OTHER
+# SPDX-FileCopyrightText: (c) 2021-2022, The Raetro authors and contributors
+###############################################################################
+# This file can be copied and used freely without restrictions.
+# Please note that the actual code of MiMiC is covered by the GNU
+# General Public License and is *not* in the public domain.
+###############################################################################
+# attribute       # Checkin behavior # Checkout behavior
+###############################################################################
+# text            # Normalized to LF # Convert to native line endings
+# [text] eol=crlf # Normalized to LF # Convert to CRLF
+# [text] eol=lf   # Normalized to LF # Convert to LF
+# -text or binary # No conversion    # No conversion
+# text=auto       # Like "text" if text file according to git, otherwise, like "binary"
+# unspecified     # Fall back to core.autocrlf setting of local environment
+###############################################################################
+# core.autocrlf
+#   false: same as binary
+#   true:  same as eol=crlf
+#   input: same as eol=lf
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+* text=auto
+###############################################################################
+###### Git
+###############################################################################
+.gitattributes text
+.gitconfig     text
+.gitignore     text
+.gitmodules    text
+###############################################################################
+##### Windows
+###############################################################################
+*.bat          text eol=crlf
+*.ps1          text eol=crlf
+*.dll          binary
+*.exe          binary
+###############################################################################
+##### Linux
+###############################################################################
+*.sh           eol=lf
+*.so           binary
+###############################################################################
+##### Global
+###############################################################################
+# Docker
+###############################################################################
+*.dockerignore text
+Dockerfile     text
+###############################################################################
+# Documentation
+###############################################################################
+*.ipynb      text
+*.markdown   text
+*.md         text
+*.mdown      text
+*.mdtext     text
+*.mdtxt      text
+*.mdwn       text
+*.mkd        text
+*.mkdn       text
+*.txt        text
+*COPYRIGHT*  text
+*README*     text
+AUTHORS      text
+CHANGELOG    text
+CHANGES      text
+CONTRIBUTING text
+COPYING      text
+copyright    text
+INSTALL      text
+license      text
+LICENSE      text
+NEWS         text
+readme       text
+TODO         text
+###############################################################################
+# Configuration
+###############################################################################
+*.bowerrc       text
+*.cfg           eol=lf
+*.cnf           text
+*.conf          text
+*.config        eol=lf
+*.json          eol=lf
+*.conf          eol=lf
+*.config        eol=lf
+*.env           eol=lf
+*.ini           eol=lf
+*.toml          eol=lf
+*.npmignore     text
+*.xml           eol=lf
+*.yaml          eol=lf
+*.yml           eol=lf
+.clang-format   text
+.browserslistrc text
+.editorconfig   text
+.slugignore     text
+browserslist    text
+Makefile        text
+makefile        text
+Procfile        text
+###############################################################################
+# Linters
+###############################################################################
+.csslintrc    text
+.eslintrc     text
+.htmlhintrc   text
+.jscsrc       text
+.jshintignore text
+.jshintrc     text
+.stylelintrc  text
+###############################################################################
+# Video
+###############################################################################
+*.3gp       binary
+*.3gpp      binary
+*.as        binary
+*.asf       binary
+*.asx       binary
+*.fla       binary
+*.flv       binary
+*.m4v       binary
+*.mng       binary
+*.mov       binary
+*.mp4       binary
+*.mpeg      binary
+*.mpg       binary
+*.ogv       binary
+*.swc       binary
+*.swf       binary
+*.webm      binary
+###############################################################################
+# Audio
+###############################################################################
+*.kar       binary
+*.m4a       binary
+*.mid       binary
+*.midi      binary
+*.mp3       binary
+*.ogg       binary
+*.ra        binary
+###############################################################################
+# Graphics
+###############################################################################
+*.ai        binary
+*.bmp       binary
+*.eps       binary
+*.gif       binary
+*.ico       binary
+*.jng       binary
+*.jp2       binary
+*.jpeg      binary
+*.jpg       binary
+*.jpx       binary
+*.jxr       binary
+*.pdf       binary
+*.png       binary
+*.psb       binary
+*.psd       binary
+*.svg       text
+*.svgz      binary
+*.tif       binary
+*.tiff      binary
+*.wbmp      binary
+*.webp      binary
+###############################################################################
+# Archives
+###############################################################################
+*.7z        binary
+*.gz        binary
+*.jar       binary
+*.rae       binary
+*.rar       binary
+*.tar       binary
+*.zip       binary
+###############################################################################
+# Fonts
+###############################################################################
+*.eot       binary
+*.otf       binary
+*.ttf       binary
+*.woff      binary
+*.woff2     binary
+###############################################################################
+# Executables
+###############################################################################
+*.pyc       binary
+###############################################################################
+# Objects
+###############################################################################
+*.o         binary
+###############################################################################
+##### IDE/Editor
+###############################################################################
+# Visual Studio
+*.csproj    text eol=crlf
+*.dbproj    text eol=crlf
+*.filters   text eol=crlf
+*.fsproj    text eol=crlf
+*.lsproj    text eol=crlf
+*.modelproj text eol=crlf
+*.props     text eol=crlf
+*.sln       text eol=crlf
+*.sqlproj   text eol=crlf
+*.vbproj    text eol=crlf
+*.vcproj    text eol=crlf
+*.vcxitems  text eol=crlf
+*.vcxproj   text eol=crlf
+*.wixproj   text eol=crlf
+*.wmaproj   text eol=crlf
+*.xproj     text eol=crlf
+###############################################################################
+# Eclipse
+###############################################################################
+*.classpath text
+*.prefs
+*.project   text
+###############################################################################
+##### Languages
+###############################################################################
+# C/C++
+###############################################################################
+*.a      binary
+*.app    binary
+*.c      eol=lf
+*.c++    eol=lf
+*.cc     eol=lf
+*.cpp    eol=lf
+*.cxx    eol=lf
+*.dylib  binary
+*.gch    binary
+*.h      eol=lf
+*.h++    eol=lf
+*.hh     eol=lf
+*.hpp    eol=lf
+*.la     binary
+*.lai    binary
+*.lib    binary
+*.lo     binary
+*.obj    binary
+*.out    binary
+*.pch    binary
+*.slo    binary
+###############################################################################
+# Misc
+###############################################################################
+*.css    text
+*.html   text diff=html
+*.js     eol=lf
+*.json   eol=lf
+*.jsx    eol=lf
+*.php    text diff=php
+*.pl     eol=lf
+*.py     text diff=python
+*.rb     text diff=ruby
+*.sql    text
+*.vue    eol=lf
+

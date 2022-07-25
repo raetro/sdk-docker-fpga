@@ -1,0 +1,475 @@
+{
+  "packages": [
+    {
+      "adduser": "3.115"
+    },
+    {
+      "apt": "1.4.11"
+    },
+    {
+      "base-files": "9.9+deb9u13"
+    },
+    {
+      "base-passwd": "3.5.43"
+    },
+    {
+      "bash": "4.4-5"
+    },
+    {
+      "bc": "1.06.95-9+b3"
+    },
+    {
+      "bsdutils": "1:2.29.2-1+deb9u1"
+    },
+    {
+      "ca-certificates": "20200601~deb9u2"
+    },
+    {
+      "coreutils": "8.26-3"
+    },
+    {
+      "curl": "7.52.1-5+deb9u16"
+    },
+    {
+      "dash": "0.5.8-2.4"
+    },
+    {
+      "debconf": "1.5.61"
+    },
+    {
+      "debian-archive-keyring": "2017.5+deb9u2"
+    },
+    {
+      "debianutils": "4.8.1.1"
+    },
+    {
+      "dh-python": "2.20170125"
+    },
+    {
+      "diffutils": "1:3.5-3"
+    },
+    {
+      "dpkg": "1.18.26"
+    },
+    {
+      "e2fslibs": "1.43.4-2+deb9u2"
+    },
+    {
+      "e2fsprogs": "1.43.4-2+deb9u2"
+    },
+    {
+      "expect": "5.45-7+deb9u1"
+    },
+    {
+      "file": "1:5.30-1+deb9u3"
+    },
+    {
+      "findutils": "4.6.0+git+20161106-2"
+    },
+    {
+      "gcc-6-base": "6.3.0-18+deb9u1"
+    },
+    {
+      "gh": "2.14.2"
+    },
+    {
+      "git": "1:2.11.0-3+deb9u7"
+    },
+    {
+      "git-man": "1:2.11.0-3+deb9u7"
+    },
+    {
+      "gpgv": "2.1.18-8~deb9u4"
+    },
+    {
+      "grep": "2.27-2"
+    },
+    {
+      "gzip": "1.6-5+deb9u1"
+    },
+    {
+      "hostname": "3.18+b1"
+    },
+    {
+      "init-system-helpers": "1.48"
+    },
+    {
+      "iputils-ping": "3:20161105-1"
+    },
+    {
+      "less": "481-2.1"
+    },
+    {
+      "libacl1": "2.2.52-3+b1"
+    },
+    {
+      "libapt-pkg5.0": "1.4.11"
+    },
+    {
+      "libattr1": "1:2.4.47-2+b2"
+    },
+    {
+      "libaudit-common": "1:2.6.7-2"
+    },
+    {
+      "libaudit1": "1:2.6.7-2"
+    },
+    {
+      "libblkid1": "2.29.2-1+deb9u1"
+    },
+    {
+      "libbz2-1.0": "1.0.6-8.1"
+    },
+    {
+      "libc-bin": "2.24-11+deb9u4"
+    },
+    {
+      "libc-l10n": "2.24-11+deb9u4"
+    },
+    {
+      "libc6": "2.24-11+deb9u4"
+    },
+    {
+      "libcap-ng0": "0.7.7-3+b1"
+    },
+    {
+      "libcap2": "1:2.25-1"
+    },
+    {
+      "libcomerr2": "1.43.4-2+deb9u2"
+    },
+    {
+      "libcurl3": "7.52.1-5+deb9u16"
+    },
+    {
+      "libcurl3-gnutls": "7.52.1-5+deb9u16"
+    },
+    {
+      "libdb5.3": "5.3.28-12+deb9u1"
+    },
+    {
+      "libdebconfclient0": "0.227"
+    },
+    {
+      "liberror-perl": "0.17024-1"
+    },
+    {
+      "libexpat1": "2.2.0-2+deb9u5"
+    },
+    {
+      "libfdisk1": "2.29.2-1+deb9u1"
+    },
+    {
+      "libffi6": "3.2.1-6"
+    },
+    {
+      "libgcc1": "1:6.3.0-18+deb9u1"
+    },
+    {
+      "libgcrypt20": "1.7.6-2+deb9u4"
+    },
+    {
+      "libgdbm3": "1.8.3-14"
+    },
+    {
+      "libglib2.0-0": "2.50.3-2+deb9u3"
+    },
+    {
+      "libgmp10": "2:6.1.2+dfsg-1+deb9u1"
+    },
+    {
+      "libgnutls30": "3.5.8-5+deb9u6"
+    },
+    {
+      "libgpg-error0": "1.26-2"
+    },
+    {
+      "libgssapi-krb5-2": "1.15-1+deb9u3"
+    },
+    {
+      "libhogweed4": "3.3-1+deb9u1"
+    },
+    {
+      "libidn11": "1.33-1+deb9u1"
+    },
+    {
+      "libidn2-0": "0.16-1+deb9u1"
+    },
+    {
+      "libk5crypto3": "1.15-1+deb9u3"
+    },
+    {
+      "libkeyutils1": "1.5.9-9"
+    },
+    {
+      "libkrb5-3": "1.15-1+deb9u3"
+    },
+    {
+      "libkrb5support0": "1.15-1+deb9u3"
+    },
+    {
+      "libldap-2.4-2": "2.4.44+dfsg-5+deb9u9"
+    },
+    {
+      "libldap-common": "2.4.44+dfsg-5+deb9u9"
+    },
+    {
+      "liblz4-1": "0.0~r131-2+deb9u1"
+    },
+    {
+      "liblzma5": "5.2.2-1.2+deb9u1"
+    },
+    {
+      "liblzo2-2": "2.08-1.2+b2"
+    },
+    {
+      "libmagic-mgc": "1:5.30-1+deb9u3"
+    },
+    {
+      "libmagic1": "1:5.30-1+deb9u3"
+    },
+    {
+      "libmount1": "2.29.2-1+deb9u1"
+    },
+    {
+      "libmpdec2": "2.4.2-1"
+    },
+    {
+      "libncursesw5": "6.0+20161126-1+deb9u2"
+    },
+    {
+      "libnettle6": "3.3-1+deb9u1"
+    },
+    {
+      "libnghttp2-14": "1.18.1-1+deb9u2"
+    },
+    {
+      "libp11-kit0": "0.23.3-2+deb9u1"
+    },
+    {
+      "libpam-modules": "1.1.8-3.6"
+    },
+    {
+      "libpam-modules-bin": "1.1.8-3.6"
+    },
+    {
+      "libpam-runtime": "1.1.8-3.6"
+    },
+    {
+      "libpam0g": "1.1.8-3.6"
+    },
+    {
+      "libpcre3": "2:8.39-3"
+    },
+    {
+      "libperl5.24": "5.24.1-3+deb9u7"
+    },
+    {
+      "libpopt0": "1.16-10+b2"
+    },
+    {
+      "libpsl5": "0.17.0-3"
+    },
+    {
+      "libpython3-stdlib": "3.5.3-1"
+    },
+    {
+      "libpython3.5-minimal": "3.5.3-1+deb9u5"
+    },
+    {
+      "libpython3.5-stdlib": "3.5.3-1+deb9u5"
+    },
+    {
+      "libreadline7": "7.0-3"
+    },
+    {
+      "librtmp1": "2.4+20151223.gitfa8646d.1-1+b1"
+    },
+    {
+      "libsasl2-2": "2.1.27~101-g0780600+dfsg-3+deb9u2"
+    },
+    {
+      "libsasl2-modules-db": "2.1.27~101-g0780600+dfsg-3+deb9u2"
+    },
+    {
+      "libselinux1": "2.6-3+b3"
+    },
+    {
+      "libsemanage-common": "2.6-2"
+    },
+    {
+      "libsemanage1": "2.6-2"
+    },
+    {
+      "libsepol1": "2.6-2"
+    },
+    {
+      "libsmartcols1": "2.29.2-1+deb9u1"
+    },
+    {
+      "libsqlite3-0": "3.16.2-5+deb9u3"
+    },
+    {
+      "libss2": "1.43.4-2+deb9u2"
+    },
+    {
+      "libssh2-1": "1.7.0-1+deb9u2"
+    },
+    {
+      "libssl1.0.2": "1.0.2u-1~deb9u7"
+    },
+    {
+      "libssl1.1": "1.1.0l-1~deb9u6"
+    },
+    {
+      "libstdc++6": "6.3.0-18+deb9u1"
+    },
+    {
+      "libsystemd0": "232-25+deb9u14"
+    },
+    {
+      "libtasn1-6": "4.10-1.1+deb9u1"
+    },
+    {
+      "libtcl8.6": "8.6.6+dfsg-1+b1"
+    },
+    {
+      "libtcmalloc-minimal4": "2.5-2.2"
+    },
+    {
+      "libtinfo5": "6.0+20161126-1+deb9u2"
+    },
+    {
+      "libudev1": "232-25+deb9u14"
+    },
+    {
+      "libunistring0": "0.9.6+really0.9.3-0.1"
+    },
+    {
+      "libustr-1.0-1": "1.0.4-6"
+    },
+    {
+      "libuuid1": "2.29.2-1+deb9u1"
+    },
+    {
+      "locales": "2.24-11+deb9u4"
+    },
+    {
+      "login": "1:4.4-4.1+deb9u1"
+    },
+    {
+      "lsb-base": "9.20161125"
+    },
+    {
+      "make": "4.1-9.1"
+    },
+    {
+      "mawk": "1.3.3-17+b3"
+    },
+    {
+      "mime-support": "3.60"
+    },
+    {
+      "mount": "2.29.2-1+deb9u1"
+    },
+    {
+      "multiarch-support": "2.24-11+deb9u4"
+    },
+    {
+      "nano": "2.7.4-1"
+    },
+    {
+      "ncurses-base": "6.0+20161126-1+deb9u2"
+    },
+    {
+      "ncurses-bin": "6.0+20161126-1+deb9u2"
+    },
+    {
+      "net-tools": "1.60+git20161116.90da8a0-1"
+    },
+    {
+      "openssl": "1.1.0l-1~deb9u6"
+    },
+    {
+      "passwd": "1:4.4-4.1+deb9u1"
+    },
+    {
+      "perl": "5.24.1-3+deb9u7"
+    },
+    {
+      "perl-base": "5.24.1-3+deb9u7"
+    },
+    {
+      "perl-modules-5.24": "5.24.1-3+deb9u7"
+    },
+    {
+      "python-pip-whl": "9.0.1-2+deb9u2"
+    },
+    {
+      "python3": "3.5.3-1"
+    },
+    {
+      "python3-minimal": "3.5.3-1"
+    },
+    {
+      "python3-pip": "9.0.1-2+deb9u2"
+    },
+    {
+      "python3.5": "3.5.3-1+deb9u5"
+    },
+    {
+      "python3.5-minimal": "3.5.3-1+deb9u5"
+    },
+    {
+      "readline-common": "7.0-3"
+    },
+    {
+      "rsync": "3.1.2-1+deb9u3"
+    },
+    {
+      "sed": "4.4-1"
+    },
+    {
+      "sensible-utils": "0.0.9+deb9u1"
+    },
+    {
+      "squashfs-tools": "1:4.3-3+deb9u3"
+    },
+    {
+      "sudo": "1.8.19p1-2.1+deb9u3"
+    },
+    {
+      "sysvinit-utils": "2.88dsf-59.9"
+    },
+    {
+      "tar": "1.29b-1.1+deb9u1"
+    },
+    {
+      "tcl": "8.6.0+9"
+    },
+    {
+      "tcl-expect": "5.45-7+deb9u1"
+    },
+    {
+      "tcl8.6": "8.6.6+dfsg-1+b1"
+    },
+    {
+      "tree": "1.7.0-5"
+    },
+    {
+      "tzdata": "2021a-0+deb9u4"
+    },
+    {
+      "unzip": "6.0-21+deb9u2"
+    },
+    {
+      "util-linux": "2.29.2-1+deb9u1"
+    },
+    {
+      "wget": "1.18-5+deb9u3"
+    },
+    {
+      "zlib1g": "1:1.2.8.dfsg-5+deb9u1"
+    }
+  ]
+}
