@@ -35,20 +35,21 @@ These images are built from official installation files provided by Intel (speci
 
 ### Supported tag alias for specific FPGA projects
 
-| Project               | Version | Alias        | Architecture  | Model           |
-|-----------------------|---------|--------------|---------------|-----------------|
-| MiMiC NSX             | `17.1`  | `mimic`      | Various       | Various         |
-| MiST                  | `13.1`  | `mist`       | Cyclone III   | EP3C25E144C8    |
-| MiSTer                | `17.0`  | `mister`     | Cyclone V SE  | 5CSEBA6U23I7    |
-| Atlas                 | `17.1`  | `atlas`      | Cyclone 10 LP | 10CL025YU256C8G |
-| MultiCore             | `13.1`  | `mc`         | Cyclone IV E  | EP4CE10E22C8    |
-| MultiCore2            | `13.1`  | `mc2`        | Cyclone IV E  | EP4CE22F17C8    |
-| MultiCore2 Plus       | `13.1`  | `mcp`        | Cyclone IV E  | EP4CE55F23C8    |
-| NeptUNO               | `13.1`  | `neptuno`    | Cyclone IV E  | EP4CE55F23C8    |
-| SiDi                  | `13.1`  | `sidi`       | Cyclone IV E  | EP4CE22F17C8    |
-| Turbo Chameleon 64 v1 | `13.1`  | `tc64v1`     | Cyclone III   | EP3C25E144C8    |
-| Turbo Chameleon 64 v2 | `18.1`  | `tc64v2`     | Cyclone 10 LP | 10CL025YU256C8G |
-| Unamiga Reloaded      | `13.1`  | `uareloaded` | Cyclone IV E  | EP4CE55F23C8    |
+| Project                   | Version | Alias        | Architecture  | Model           |
+|---------------------------|---------|--------------|---------------|-----------------|
+| **MiMiC NSX**             | `17.1`  | `mimic`      | Various       | Various         |
+| **Analogue Pocket**       | `18.1`  | `pocket`     | Cyclone V     | 5CEBA4F23C8     |
+| **Atlas**                 | `17.1`  | `atlas`      | Cyclone 10 LP | 10CL025YU256C8G |
+| **MiST**                  | `13.1`  | `mist`       | Cyclone III   | EP3C25E144C8    |
+| **MiSTer**                | `17.0`  | `mister`     | Cyclone V SE  | 5CSEBA6U23I7    |
+| **MultiCore**             | `13.1`  | `mc`         | Cyclone IV E  | EP4CE10E22C8    |
+| **MultiCore2**            | `13.1`  | `mc2`        | Cyclone IV E  | EP4CE22F17C8    |
+| **MultiCore2 Plus**       | `13.1`  | `mcp`        | Cyclone IV E  | EP4CE55F23C8    |
+| **NeptUNO**               | `13.1`  | `neptuno`    | Cyclone IV E  | EP4CE55F23C8    |
+| **SiDi**                  | `13.1`  | `sidi`       | Cyclone IV E  | EP4CE22F17C8    |
+| **Turbo Chameleon 64 v1** | `13.1`  | `tc64v1`     | Cyclone III   | EP3C25E144C8    |
+| **Turbo Chameleon 64 v2** | `18.1`  | `tc64v2`     | Cyclone 10 LP | 10CL025YU256C8G |
+| **Unamiga Reloaded**      | `13.1`  | `uareloaded` | Cyclone IV E  | EP4CE55F23C8    |
 
 > MiMiC Supported Boards: DE10-Nano, SoCKit, Deca, C10LP-RefKit, CYC1000, Chameleon96.
 

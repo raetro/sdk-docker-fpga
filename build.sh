@@ -129,6 +129,7 @@ publish() {
     	tag_variation "${TAG_NAME}" "atlas"
     elif [ "${VERSION}" = "18.1" ]; then
     	tag_variation "${TAG_NAME}" "tc64v2"
+    	tag_variation "${TAG_NAME}" "pocket"
     elif [ "${VERSION}" = "21.1" ]; then
     	tag_variation "${TAG_NAME}" "21.1.1"
     fi
