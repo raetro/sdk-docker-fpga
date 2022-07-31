@@ -160,7 +160,7 @@ publish_to_github() {
     	tag_variation "${GIT_TAG_NAME}" "atlas"
     elif [ "${VERSION}" = "18.1" ]; then
     	tag_variation "${GIT_TAG_NAME}" "tc64v2"
-    	tag_variation "${TAG_NAME}" "pocket"
+    	tag_variation "${GIT_TAG_NAME}" "pocket"
     elif [ "${VERSION}" = "21.1" ]; then
     	tag_variation "${GIT_TAG_NAME}" "21.1.1"
     fi
