@@ -18,7 +18,7 @@ usage() {
 	echo
 	echo "Usage: build.sh [-v] [OPTION...]"
 	echo "  -v    Quartus version to build."
-	echo "        [13.0, 13.1, 17.0, 17.1, 18.1, 19.1, 20.1, 21.1]"
+	echo "        [13.0, 13.1, 17.0, 17.1, 18.1, 19.1, 20.1, 21.1, 22.1]"
 	echo
 	echo " Main modes of operation:"
 	echo "  -b    Build container using remote files."
@@ -29,7 +29,7 @@ usage() {
 	echo "  -c    Check local files integrity."
 	echo "  -o    Build Base OS."
 	echo
-	echo " eg. build.sh -v21.1 -b"
+	echo " eg. build.sh -v22.1 -b"
 	echo "     build.sh -vbase -o"
 	echo
 }
@@ -132,6 +132,8 @@ publish() {
     	tag_variation "${TAG_NAME}" "pocket"
     elif [ "${VERSION}" = "21.1" ]; then
     	tag_variation "${TAG_NAME}" "21.1.1"
+	elif [ "${VERSION}" = "22.1" ]; then
+    	tag_variation "${TAG_NAME}" "22.1.1"
     fi
 	echo "Done."
 }
@@ -163,6 +165,8 @@ publish_to_github() {
     	tag_variation "${GIT_TAG_NAME}" "pocket"
     elif [ "${VERSION}" = "21.1" ]; then
     	tag_variation "${GIT_TAG_NAME}" "21.1.1"
+	elif [ "${VERSION}" = "22.1" ]; then
+    	tag_variation "${GIT_TAG_NAME}" "22.1.1"
     fi
 	echo "Done."
 }
@@ -234,6 +238,14 @@ download() {
             fileArray[2]="21.1std.1/850/ib_installers/cyclone10lp-21.1.1.850.qdz"
             fileArray[3]="21.1std.1/850/ib_installers/cyclonev-21.1.1.850.qdz"
             fileArray[4]="21.1std.1/850/ib_installers/max10-21.1.1.850.qdz"
+			;;
+		"22.1")
+			echo "Downloading v22.1std.1.917"			              
+			fileArray[0]="22.1std.1/917/ib_installers/QuartusLiteSetup-22.1std.1.917-linux.run"
+			fileArray[1]="22.1std.1/917/ib_installers/cyclone-22.1std.1.917.qdz"
+			fileArray[2]="22.1std.1/917/ib_installers/cyclone10lp-22.1std.1.917.qdz"
+			fileArray[3]="22.1std.1/917/ib_installers/cyclonev-22.1std.1.917.qdz"
+			fileArray[4]="22.1std.1/917/ib_installers/max10-22.1std.1.917.qdz"
 			;;
 		*)   # Invalid option
 			echo "Error: Invalid Version"
