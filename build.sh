@@ -240,12 +240,12 @@ download() {
             fileArray[4]="21.1std.1/850/ib_installers/max10-21.1.1.850.qdz"
 			;;
 		"22.1")
-			echo "Downloading v22.1std.1.917"			              
-			fileArray[0]="22.1std.1/917/ib_installers/QuartusLiteSetup-22.1std.1.917-linux.run"
-			fileArray[1]="22.1std.1/917/ib_installers/cyclone-22.1std.1.917.qdz"
-			fileArray[2]="22.1std.1/917/ib_installers/cyclone10lp-22.1std.1.917.qdz"
-			fileArray[3]="22.1std.1/917/ib_installers/cyclonev-22.1std.1.917.qdz"
-			fileArray[4]="22.1std.1/917/ib_installers/max10-22.1std.1.917.qdz"
+			echo "Downloading v22.1std.2.922"			              
+			fileArray[0]="22.1std.2/922/ib_installers/QuartusLiteSetup-22.1std.2.922-linux.run"
+			fileArray[1]="22.1std.2/922/ib_installers/cyclone-22.1std.2.922.qdz"
+			fileArray[2]="22.1std.2/922/ib_installers/cyclone10lp-22.1std.2.922.qdz"
+			fileArray[3]="22.1std.2/922/ib_installers/cyclonev-22.1std.2.922.qdz"
+			fileArray[4]="22.1std.2/922/ib_installers/max10-22.1std.2.922.qdz"
 			;;
 		*)   # Invalid option
 			echo "Error: Invalid Version"
