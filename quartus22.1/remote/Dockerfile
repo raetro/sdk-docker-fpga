@@ -14,15 +14,15 @@ WORKDIR /tmp
 ARG INTEL_CDN="https://downloads.intel.com/akdlm/software/acdsinst"
 
 # Add Quartus installation files
-ADD ${INTEL_CDN}/22.1std.1/917/ib_installers/cyclone-22.1std.1.917.qdz                .
-ADD ${INTEL_CDN}/22.1std.1/917/ib_installers/cyclone10lp-22.1std.1.917.qdz            .
-ADD ${INTEL_CDN}/22.1std.1/917/ib_installers/cyclonev-22.1std.1.917.qdz               .
-ADD ${INTEL_CDN}/22.1std.1/917/ib_installers/max10-22.1std.1.917.qdz                  .
-ADD ${INTEL_CDN}/22.1std.1/917/ib_installers/QuartusLiteSetup-22.1std.1.917-linux.run .
+ADD ${INTEL_CDN}/22.1std.2/922/ib_installers/cyclone-22.1std.2.922.qdz                .
+ADD ${INTEL_CDN}/22.1std.2/922/ib_installers/cyclone10lp-22.1std.2.922.qdz            .
+ADD ${INTEL_CDN}/22.1std.2/922/ib_installers/cyclonev-22.1std.2.922.qdz               .
+ADD ${INTEL_CDN}/22.1std.2/922/ib_installers/max10-22.1std.2.922.qdz                  .
+ADD ${INTEL_CDN}/22.1std.2/922/ib_installers/QuartusLiteSetup-22.1std.2.922-linux.run .
 
 # Fix file permissions
-RUN chmod a+x QuartusLiteSetup-22.1std.1.917-linux.run                                                        && \
-    ./QuartusLiteSetup-22.1std.1.917-linux.run --mode unattended --accept_eula 1 --installdir /opt/intelFPGA  && \
+RUN chmod a+x QuartusLiteSetup-22.1std.2.922-linux.run                                                        && \
+    ./QuartusLiteSetup-22.1std.2.922-linux.run --mode unattended --accept_eula 1 --installdir /opt/intelFPGA  && \
     rm -rf /opt/intelFPGA/uninstall/
 
 ################################################################################

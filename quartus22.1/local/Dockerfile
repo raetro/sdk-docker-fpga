@@ -11,15 +11,15 @@ FROM raetro/quartus:base as install
 WORKDIR /tmp
 
 # Add Quartus installation files
-ADD files/cyclone-22.1std.1.917.qdz                 .
-ADD files/cyclone10lp-22.1std.1.917.qdz             .
-ADD files/cyclonev-22.1std.1.917.qdz                .
-ADD files/max10-22.1std.1.917.qdz                   .
-ADD files/QuartusLiteSetup-22.1std.1.917-linux.run  .
+ADD files/cyclone-22.1std.2.922.qdz                 .
+ADD files/cyclone10lp-22.1std.2.922.qdz             .
+ADD files/cyclonev-22.1std.2.922.qdz                .
+ADD files/max10-22.1std.2.922.qdz                   .
+ADD files/QuartusLiteSetup-22.1std.2.922-linux.run  .
 
 # Fix file permissions
-RUN chmod a+x QuartusLiteSetup-22.1std.1.917-linux.run                                                        && \
-    ./QuartusLiteSetup-22.1std.1.917-linux.run --mode unattended --accept_eula 1 --installdir /opt/intelFPGA  && \
+RUN chmod a+x QuartusLiteSetup-22.1std.2.922-linux.run                                                        && \
+    ./QuartusLiteSetup-22.1std.2.922-linux.run --mode unattended --accept_eula 1 --installdir /opt/intelFPGA  && \
     rm -rf /opt/intelFPGA/uninstall/
 
 ################################################################################
