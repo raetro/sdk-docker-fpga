@@ -33,6 +33,7 @@ These images are built from official installation files provided by Intel (speci
     - [`20.1`](https://github.com/raetro/sdk-docker-fpga/tree/master/quartus20.1) v20.1.0.711
     - [`21.1`, `21.1.1`](https://github.com/raetro/sdk-docker-fpga/tree/master/quartus21.1) v21.1.1.850
     - [`22.1`, `22.1.2`](https://github.com/raetro/sdk-docker-fpga/tree/master/quartus22.1) v22.1std.2.922
+    - [`23.1`](https://github.com/raetro/sdk-docker-fpga/tree/master/quartus23.1) v23.1std.0.991
 
 ### Supported tag alias for specific FPGA projects
 
